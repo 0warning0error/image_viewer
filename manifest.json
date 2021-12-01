@@ -1,0 +1,24 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "css/style.css" ],
+      "js": [ "js/fabric.min.js", "js/loader.js" ],
+      "matches": ["*://*/*.png?*","*://*/*.png","*://*/*.jpg?*", "*://*/*.jpg","*://*/*.jpeg?*", "*://*/*.jpeg", "*://*/*.bmp?*","*://*/*.bmp", "*://*/*.webp?*", "*://*/*.webp", "*://*/*.gif?*", "*://*/*.gif", "file://*/*.png", "file://*/*.jpg", "file://*/*.jpeg", "file://*/*.bmp", "file://*/*.webp", "file://*/*.gif", "file:///*:/*/*.png", "file:///*:/*/*.jpg", "file:///*:/*/*.jpeg", "file:///*:/*/*.bmp", "file:///*:/*/*.webp", "file:///*:/*/*.gif" ],
+      "run_at": "document_start"
+   } ],
+   "description": "可查看图片并编辑图片",
+   "homepage_url": "https://0warning0error.github.io",
+   "icons": {
+      "128": "images/128.png",
+      "19": "images/19.png",
+      "48": "images/48.png"
+   },
+   "manifest_version": 2,
+   "name": "图片查看编辑器",
+   "permissions": [ "tabs" ],
+   "version": "1.0.12",
+   "web_accessible_resources": [ "images/*" ]
+}
